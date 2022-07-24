@@ -13,7 +13,6 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) {
   let sum = a+b;
   let answer = `The sum of ${a} and ${b} is ${sum}.`;
-  console.log(answer);
   let arr = [sum, answer];
   return arr;
 }
@@ -40,7 +39,7 @@ function multiply(a, b) { //eslint-disable-line
 
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
+//testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -85,8 +84,17 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { 
 
+  let answer = sum(testArray[0],testArray[1]);
+  console.log(answer);
+  //let answer2 = sum(answer[0], testArray[2]);
+
+  // console.log(answer);
+  // let arr = [answer[0], `${testArray[0]}/,${testArray[1]}/,${testArray[2]} was passed in as an array of numbers, and ${answer} is their sum.`];
+  // console.log(arr);
+
+  // return arr;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
